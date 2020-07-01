@@ -1,3 +1,5 @@
+# Purpose
+
 The purpose of this project is to provide a tool which allows users to diagnose file conflicts between mods in Stellaris.
 It works by maintaining a database of which mods are known to be compatible with each other and what order they should be loaded in.
 Mods which violate the prescribed load order or overwrite common files without being marked as compatible generate an issue in
@@ -13,3 +15,7 @@ This is very much in the proof of concept phase, and several improvements are ne
 4. Provide the ability to import and export load orders to facilitate the easy distribution of mod packs.
 5. (Don't know if this is possible) Hook the Steam Workshop to pull mod dependencies automatically and provide the ability to automatically download mods in an imported modpack.
 6. Support multiple modding profiles to facilitate the concurrent installation of multiple modpacks.
+
+# How to use
+
+Just run `smm.py`; if you want to edit the database, change the definitions in `generate_smm_db.py` and then run that.
